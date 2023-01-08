@@ -16,6 +16,17 @@ body {
   background-position: center;
   background-size: cover;
 }
+.main-container {
+  width: 475px;
+}
+.welcome-txt {
+  position: absolute;
+  width: inherit;
+  top: 7%;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
 .container {
   width: 475px;
   background-color: #fff;
@@ -91,7 +102,7 @@ header .icons span:hover {
 }
 
 @media only screen and (max-width: 600px) {
-  .container {
+  .main-container, .container {
     width: 430px;
   }
   .current-date{
@@ -103,7 +114,7 @@ header .icons span:hover {
 }
 
 @media only screen and (max-width: 500px) {
-  .container {
+  .main-container, .container {
     width: 380px;
   }
   .current-date{
@@ -121,7 +132,7 @@ header .icons span:hover {
 }
 
 @media only screen and (max-width: 400px) {
-  .container {
+  .main-container, .container {
     width: 330px;
   }
 }
