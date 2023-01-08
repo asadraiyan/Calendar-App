@@ -27,7 +27,7 @@ body {
   justify-content: space-between;
   padding: 25px 30px 10px;
 }
-header .current-date {
+.current-date {
   font-size: 1.5rem;
   font-weight: 500;
 }
@@ -54,7 +54,7 @@ header .icons span:hover {
   text-align: center;
 }
 .calendar .weeks li {
-  font-weight: bold;
+  font-weight: 500;
 }
 
 .calendar ul li {
@@ -88,4 +88,40 @@ header .icons span:hover {
 }
 .days li.active::before {
   background-color: #56baed;
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    width: 430px;
+  }
+  .current-date{
+    font-size: 1.3rem;
+  }
+  .calendar .days li {
+    margin-top: 25px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .container {
+    width: 380px;
+  }
+  .current-date{
+    font-size: 1rem;
+  }
+  .weeks {
+    font-size: 0.9rem;
+  }
+  .container header {
+    padding: 15px 20px 10px;
+  }
+  .calendar {
+    padding: 10px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .container {
+    width: 330px;
+  }
 }
