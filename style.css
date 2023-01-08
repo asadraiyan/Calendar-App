@@ -11,7 +11,8 @@ body {
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  background-image: url(/ocean-png.jpg);
+  /* background-image: url(/ocean-png.jpg); */
+  background-color: #56baed;
   background-position: center;
   background-size: cover;
 }
@@ -41,7 +42,7 @@ header .icons span {
   font-size: 1.8rem;
 }
 header .icons span:hover {
-  background-color: #d4cccc;
+  background-color: #ebeaea;
 }
 .calendar {
   padding: 21px;
@@ -80,11 +81,11 @@ header .icons span:hover {
   border-radius: 50%;
 }
 .days li:hover::before {
-  background-color: #d4cccc;
+  background-color: #ebeaea;
 }
 .days li.inactive {
   color: #aaa;
 }
 .days li.active::before {
-  background-color: skyblue;
+  background-color: #56baed;
 }
