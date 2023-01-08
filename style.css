@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-image: url(/ocean-png.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.container {
+  width: 475px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+.container header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 25px 30px 10px;
+}
+header .current-date {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+header .icons span {
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  margin: 1px 1px;
+  line-height: 40px;
+  cursor: pointer;
+  border-radius: 50%;
+  font-size: 1.8rem;
+}
+header .icons span:hover {
+  background-color: #d4cccc;
+}
+.calendar {
+  padding: 21px;
+}
+.calendar ul {
+  display: flex;
+  list-style: none;
+  flex-wrap: wrap;
+  text-align: center;
+}
+.calendar .weeks li {
+  font-weight: bold;
+}
+
+.calendar ul li {
+  width: calc(100% / 7);
+  position: relative;
+}
+.calendar .days {
+  margin-bottom: 20px;
+}
+.calendar .days li {
+  margin-top: 35px;
+  cursor: pointer;
+  z-index: 1;
+}
+.calendar .days li::before {
+  position: absolute;
+  content: "";
+  height: 40px;
+  width: 40px;
+  z-index: -1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+}
+.days li:hover::before {
+  background-color: #d4cccc;
+}
+.days li.inactive {
+  color: #aaa;
+}
+.days li.active::before {
+  background-color: skyblue;
+}
